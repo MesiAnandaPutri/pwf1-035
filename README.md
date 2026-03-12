@@ -16,5 +16,14 @@ Tampilan Login
 Tampilan Login Sukses
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/af51ee9c-481d-4eb0-97e1-ba02a466c110" />
 
+PERTEMUAN 3
+
+migrate
+<img width="1920" height="1080" alt="Screenshot 2026-03-12 211436" src="https://github.com/user-attachments/assets/23dd57cb-308b-4c3b-87d9-418aa05cc7aa" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-03-12 211451" src="https://github.com/user-attachments/assets/c0caff05-2920-49ef-bc2c-9957cdfa8626" />
+
+Database
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d17017a6-cd7e-4f64-9c88-6c0055317f34" />
 
 

@@ -2,9 +2,21 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Product extends Model
 {
-    protected $fillable = ['name', 'qty', 'price', 'user_id'];
+    use HasFactory;
+
+    protected $fillable = ['name', 'quantity', 'price', 'user_id'];
+
+    /**
+     * Relasi ke User (Pemilik Produk)
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }

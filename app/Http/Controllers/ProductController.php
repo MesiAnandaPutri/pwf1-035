@@ -11,74 +11,70 @@ class ProductController extends Controller
 {
     use AuthorizesRequests; 
 
-    public function index()
+   public function index()
     {
-        $products = Product::with('user')->paginate(10);
+        $products = Product::latest()->paginate(10); 
+        
         return view('product.index', compact('products'));
     }
-
-    public function create()
+     public function store(Request $request)
     {
-        $this->authorize('manage-product'); 
-        
-        $users = User::all();
-        return view('product.create', compact('users'));
-    }
-
-    public function store(Request $request)
-    {
-        $this->authorize('manage-product');
-
-        $request->validate([
+        $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'qty' => 'required|integer|min:0',
+            'quantity' => 'required|integer|min:0',
             'price' => 'required|numeric|min:0',
             'user_id' => 'required|exists:users,id',
         ]);
 
-        Product::create($request->all());
+        $product = Product::create($validated);
 
         return redirect()->route('product.index')->with('success', 'Product created successfully.');
     }
 
-    public function show(Product $product)
+    public function create()
+    {        
+        $users = User::orderBy('name')->get();
+        return view('product.create', compact('users'));
+    }
+
+    public function show($id)
     {
+        $product = Product::findOrFail($id);
+    
         return view('product.view', compact('product'));
+    }
+
+     public function update(Request $request, $id)
+     {
+        $this->authorize('update', $id);
+        
+        $product = Product::findOrFail($id);
+    
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'quantity' => 'required|integer|min:0', // Pastikan divalidasi sebagai 'qty'
+            'price' => 'required|numeric|min:0',
+            'user_id' => 'required|exists:users,id',
+        ]);
+
+        $product->update($validated);
+
+        return redirect()->route('product.index')->with('success', 'Product updated successfully.');
     }
 
     public function edit(Product $product)
     {
         $this->authorize('update', $product);
 
-        $users = User::all();
+        $users = User::orderBy('name')->get();
         return view('product.edit', compact('product', 'users'));
     }
 
-    public function update(Request $request, Product $product)
+    public function delete($id)
     {
-        $this->authorize('update', $product);
+        $this->authorize('update', $id);
 
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'qty' => 'required|integer|min:0', // Pastikan divalidasi sebagai 'qty'
-            'price' => 'required|numeric|min:0',
-            'user_id' => 'required|exists:users,id',
-        ]);
-
-        // Jika form kamu mengirim 'quantity', kita harus mengubahnya menjadi 'qty' sebelum update
-        $data = $request->all();
-        if ($request->has('quantity')) {
-            $data['qty'] = $request->quantity;
-        }
-
-        $product->update($data);
-
-        return redirect()->route('product.index')->with('success', 'Product updated successfully.');
-    }
-
-    public function delete(Product $product)
-    {
-        $this->authorize('delete', $product);
+        $product = Product::findOrFail($id);
 
         $product->delete();
 

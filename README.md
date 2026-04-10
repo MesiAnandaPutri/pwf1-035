@@ -26,8 +26,27 @@ migrate
 Database
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d17017a6-cd7e-4f64-9c88-6c0055317f34" />
 
-Pertemuan 4
+PERTEMUAN 4
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/96e3c4de-b378-4c64-bc01-166e0356a6b5" />
 
+PERTEMUAN 5
+
+Tampilan Admin1
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/19859e2b-5d09-49f2-b58d-762a101fd65d" />
+
+Tampilan Admin2
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9769a984-5995-4f12-a3d1-820aa49f95ca" />
+
+Tampilan User
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ddcb02a-d037-4462-947c-d6ba60360110" />
+
+Tampilan Add Product
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/51ab3415-79e8-48da-b4b7-3c1d0e7d1ee5" />
+
+Tampilan Data User
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aa7c018a-fe4c-4cea-b527-ff1daf9cbe9f" />
+
+Tampilan Data Product
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/afe50857-59f4-40cd-90e7-6a6b381a7117" />
 
 

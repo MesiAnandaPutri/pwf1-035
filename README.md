@@ -26,4 +26,8 @@ migrate
 Database
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d17017a6-cd7e-4f64-9c88-6c0055317f34" />
 
+Pertemuan 4
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/96e3c4de-b378-4c64-bc01-166e0356a6b5" />
+
+
 

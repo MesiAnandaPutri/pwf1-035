@@ -49,4 +49,19 @@ Tampilan Data User
 Tampilan Data Product
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/afe50857-59f4-40cd-90e7-6a6b381a7117" />
 
+PERTEMUAN 6
+
+Validasi Field Kosong Pada Tambah Produk
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c4042bf5-7890-4dd7-8e00-a40619917e8c" />
+
+Validasi Input Salah Pada Tambah Produk
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/da26e758-fb70-4e34-b1aa-fca845097e8e" />
+
+Validasi Field Kosong Pada Edit Produk
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a9eae89-7975-43cd-a5e0-df50a403de24" />
+
+Validasi Input Salah Pada Edit Produk
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/117d4f77-a458-4af6-8798-7f0395f82667" />
+
+
 

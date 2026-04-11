@@ -47,7 +47,7 @@
                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                                     Quantity <span class="text-red-500">*</span>
                                 </label>
-                                <input type="number" id="quantity" name="quantity" value="{{ old('quantity') }}"
+                                <input type="text" id="quantity" name="quantity" value="{{ old('quantity') }}"
                                        placeholder="0" min="0"
                                        class="w-full px-4 py-2.5 rounded-lg border text-sm
                                        {{ $errors->has('quantity') ? 'border-red-400 bg-red-50 dark:bg-red-900/20' : 'border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700' }} 
@@ -63,7 +63,7 @@
                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                                     Price (Rp) <span class="text-red-500">*</span>
                                 </label>
-                                <input type="number" id="price" name="price" value="{{ old('price') }}"
+                                <input type="text" id="price" name="price" value="{{ old('price') }}"
                                        placeholder="0" min="0" step="0.01"
                                        class="w-full px-4 py-2.5 rounded-lg border text-sm
                                        {{ $errors->has('price') ? 'border-red-400 bg-red-50 dark:bg-red-900/20' : 'border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700' }} 

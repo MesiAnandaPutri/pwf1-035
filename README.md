@@ -63,5 +63,9 @@ Validasi Field Kosong Pada Edit Produk
 Validasi Input Salah Pada Edit Produk
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/117d4f77-a458-4af6-8798-7f0395f82667" />
 
+Praltikum 7
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c153d770-fa89-4c0d-a649-b86d2e84ef6c" />
+
+
 
 

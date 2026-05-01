@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white dark:bg-gray-800 overflow-visible shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
                     <div class="flex items-center justify-between mb-6">
@@ -9,12 +9,18 @@
                             <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 tracking-tight">Product List</h2>
                             <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Manage your product inventory</p>
                         </div>
-    
-                        @can('manage-products')
-                            <x-add-product :url="route('product.create')" :name="'Product'"/>
-                        @endcan
-                    </div>
 
+                        @if(Auth::check() && Auth::user()->role == 'admin')
+                            <a href="{{ route('product.create') }}" 
+                               style="display:inline-flex; align-items:center; gap:8px; padding:8px 16px; background-color:#4f46e5; color:white; font-size:14px; font-weight:500; border-radius:8px; text-decoration:none; box-shadow:0 1px 2px rgba(0,0,0,0.1);">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                </svg>
+                                Add Product
+                            </a>
+                        @endif
+                    </div>
+                    
                     @if (session('success'))
                         <div class="mb-4 px-4 py-3 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-700 text-green-700 dark:text-green-300 rounded-lg text-sm">
                             {{ session('success') }}

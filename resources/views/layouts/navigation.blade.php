@@ -22,6 +22,12 @@
                         {{ __('Product') }}
                     </x-nav-link>
                     @endcan
+
+                    @can('viewAny', App\Models\Category::class)
+                    <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories.*')">
+                        {{ __('Category') }}
+                    </x-nav-link>
+                    @endcan
                 </div>
             </div>
 

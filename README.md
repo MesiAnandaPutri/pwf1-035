@@ -63,8 +63,23 @@ Validasi Field Kosong Pada Edit Produk
 Validasi Input Salah Pada Edit Produk
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/117d4f77-a458-4af6-8798-7f0395f82667" />
 
-Praltikum 7
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c153d770-fa89-4c0d-a649-b86d2e84ef6c" />
+PRAKTIKUM 7
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2dcf5ad8-d6aa-4c14-b849-10a524ca9c44" />
+
+UCP 1
+1. Tambah Kategori
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74ada4af-ec81-4f41-8b87-894f89a241a4" />
+
+2. Halaman Kategori
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca7ba68a-b5c0-46b3-a1c0-09b92d67e019" />
+
+3. Edit Kategori
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/22db7aae-1ea2-413e-9d70-d0ba0d0c5619" />
+
+4. Hapus Kategori
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/66f72c24-40e0-4a3e-8031-73c03137153a" />
+
+
 
 
 

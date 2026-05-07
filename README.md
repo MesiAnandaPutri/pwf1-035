@@ -79,8 +79,8 @@ UCP 1
 4. Hapus Kategori
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/66f72c24-40e0-4a3e-8031-73c03137153a" />
 
+PRAKTIKUM 9
 
-
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/01ec3b61-ff68-4cb2-abe9-bd9655cbda45" />
 
 
